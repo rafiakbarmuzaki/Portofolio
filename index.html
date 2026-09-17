@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Profesional - Rafi Akbar Muzaki</title>
+    <title>Rafi Akbar Muzaki - Portofolio</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -134,8 +134,8 @@
                 email: "rafimuzaki1705@gmail.com", 
                 location: "Jakarta, Indonesia",
                 // Tulis URL foto gantengmu di sini. Bisa file lokal seperti "./assets/profil.jpg" atau link online
-                photoUrl: "./assets/profil.jpg", 
-                about: "Saya adalah seorang Mahasiswa Teknik Informatika yang fokus pada pembuatan aplikasi, web modern berkinerja tinggi, dan data science. Berpengalaman merancang website e-commerce, aplikasi mobile, dan aplikasi data science."
+                photoUrl: "./assets/pp.png", 
+                about: "Saya adalah seorang Mahasiswa Teknik Informatika Universitas Mercu Buana yang fokus pada pembuatan aplikasi, web modern berkinerja tinggi, dan data science. Berpengalaman merancang website e-commerce, aplikasi mobile, dan aplikasi data science."
             },
             projects: [
                 {
@@ -164,7 +164,7 @@
                     id: 3,
                     title: "SmartPOS",
                     description: "Sistem Manajemen Kasir (Point of Sale) berbasis Cloud untuk UMKM dengan fitur manajemen inventaris, analytics penjualan real-time, dan struk digital.",
-                    category: "Mobile App",
+                    category: "App",
                     tags: ["Flutter", "Node.js", "Firebase", "Gemini API", "Tailwind CSS"],
                     image: "./assets/smartpos.jpeg",
                     demoLink: "#",
@@ -181,6 +181,17 @@
                     demoLink: "https://rafiakbarmuzaki.github.io/Swarabuana-Web/",
                     codeLink: "https://github.com/rafiakbarmuzaki/Swarabuana-Web",
                     target: "_blank"
+                },
+                {
+                    id: 5,
+                    title: "Rumah Quran Salsabila Website",
+                    description: "Website informasi dan promosi untuk rumah quran salsabila dengan katalog kegiatan, galeri, serta pendaftaran santri baru.",
+                    category: "Website",
+                    tags: ["HTML", "Tailwind CSS", "JavaScript", "Google Spreadsheet"],
+                    image: "./assets/logo.png",
+                    demoLink: "https://rumah-quran-salsabila.vercel.app/",
+                    codeLink: "https://github.com/rafiakbarmuzaki/Rumah-Qur-an-Salsabila",
+                    target: "_blank"
                 }
             ],
             skills: {
@@ -188,11 +199,12 @@
                     { name: "React.js / Next.js", level: "92%" },
                     { name: "Tailwind CSS & UI UX", level: "95%" },
                     { name: "JavaScript / TypeScript", level: "88%" },
-                    { name: "HTML5 & CSS3 Layouts", level: "95%" }
+                    { name: "HTML5 & CSS3 Layouts", level: "95%" },
+                    { name: "Flutter", level: "90%" },
                 ],
                 backend: [
-                    { name: "Node.js & Express.js", level: "50%" },
-                    { name: "RESTful API & GraphQL", level: "70%" },
+                    { name: "Node.js & Express.js", level: "60%" },
+                    { name: "RESTful API & GraphQL", level: "50%" },
                     { name: "PostgreSQL & MongoDB", level: "80%" }
                 ],
                 tools: [
@@ -201,26 +213,6 @@
                     { name: "Docker & Vercel/Netlify", level: "78%" }
                 ]
             },
-            experience: [
-                {
-                    year: "2024 - Sekarang",
-                    role: "Fullstack Developer & Team Lead",
-                    company: "Digital Solution Studio",
-                    desc: "Memimpin tim pengembangan sistem internal, merancang arsitektur aplikasi tangguh berbasis React, dan mengintegrasikan berbagai API pembayaran esensial."
-                },
-                {
-                    year: "2022 - 2024",
-                    role: "Frontend Engineer Specialist",
-                    company: "Inovasi Nusantara Tech",
-                    desc: "Berperan aktif dalam membangun platform pariwisata Nusa dan mengintegrasikan POS cerdas berbasis web."
-                },
-                {
-                    year: "2021 - 2022",
-                    role: "Independent Software Developer",
-                    company: "Freelance",
-                    desc: "Merancang dan mendevelop aplikasi Cemilkuy untuk klien UMKM lokal, meningkatkan penjualan digital mereka secara signifikan."
-                }
-            ]
         };
 
         function Reveal({ children, delay = 0, className = "" }) {
@@ -357,7 +349,7 @@
                 );
 
             const initialLetter = PORTFOLIO_DATA.profile.name ? PORTFOLIO_DATA.profile.name.trim().charAt(0).toUpperCase() : 'R';
-            const brandFirstName = PORTFOLIO_DATA.profile.name ? PORTFOLIO_DATA.profile.name.split(' ')[0].toUpperCase() : 'RAFI AKBAR MUZAKI';
+            const brandName = PORTFOLIO_DATA.profile.name ? PORTFOLIO_DATA.profile.name.toUpperCase() : 'RAFI AKBAR MUZAKI';
 
             return (
                 <div className="min-h-screen relative flex flex-col justify-between overflow-hidden bg-slate-950">
@@ -372,7 +364,7 @@
                         <div className="max-w-6xl mx-auto flex justify-between items-center">
                             <a href="#" className="text-xl font-bold tracking-tight text-white flex items-center gap-2 group">
                                 <span className="bg-gradient-to-r from-emerald-400 to-teal-400 w-8 h-8 rounded-lg flex items-center justify-center text-slate-950 font-black transition duration-300 group-hover:rotate-12 group-hover:scale-110">{initialLetter}</span>
-                                <span className="transition duration-300 group-hover:text-emerald-400">{brandFirstName}<span className="text-emerald-400">.</span></span>
+                                <span className="transition duration-300 group-hover:text-emerald-400">{brandName}<span className="text-emerald-400">.</span></span>
                             </a>
 
                             {/* Desktop Menu */}
@@ -424,9 +416,7 @@
                                 <a href="#projects" className="px-7 py-3.5 bg-emerald-400 hover:bg-emerald-300 active:scale-95 text-slate-950 font-bold rounded-xl transition-all duration-300 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-400/40 hover:-translate-y-0.5 flex items-center gap-2 group">
                                     Lihat Portofolio <i className="fa-solid fa-arrow-right ml-1 transition group-hover:translate-x-1.5"></i>
                                 </a>
-                                <a href={`mailto:${PORTFOLIO_DATA.profile.email}`} className="px-7 py-3.5 border border-slate-800 hover:border-slate-700 hover:bg-slate-900/80 bg-slate-900/40 backdrop-blur text-white font-bold rounded-xl transition-all duration-300 active:scale-95">
-                                    Mulai Diskusi
-                                </a>
+                                
                             </div>
                         </div>
 
@@ -458,7 +448,7 @@
                                                 onError={(e) => {
                                                     // Fallback jika gambar lokal ditaruh salah lokasi
                                                     e.target.onerror = null;
-                                                    e.target.src = "https://placehold.co/400x400/030712/10b981?text=Rafi+Ganteng";
+                                                    e.target.src = "https://placehold.co/400x400/030712/10b981?text=Rafi";
                                                 }}
                                             />
                                         </div>
@@ -701,14 +691,45 @@
                         </div>
                     </section>
 
-                   
+                    <section id="experience" className="max-w-6xl mx-auto px-6 py-28 w-full relative z-10">
+                        <Reveal delay={100} className="text-center max-w-2xl mx-auto mb-12">
+                            <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-4 py-1.5 rounded-full border border-emerald-500/20">Pengalaman</span>
+                            <h2 className="text-3xl md:text-5xl font-bold text-white mt-4">Perjalanan dan Fokus Saya</h2>
+                        </Reveal>
+
+                        <div className="grid md:grid-cols-3 gap-8">
+                            <Reveal delay={200} className="bg-slate-900/40 border border-slate-900 hover:border-slate-800 rounded-3xl p-6">
+                                <div className="w-12 h-12 rounded-2xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center border border-emerald-500/20 mb-5">
+                                    <i className="fa-solid fa-laptop-code text-xl"></i>
+                                </div>
+                                <h3 className="text-xl font-bold text-white mb-3">Frontend & UI</h3>
+                                <p className="text-slate-400 leading-relaxed">Membangun interface yang bersih, modern, responsif, dan konsisten untuk kebutuhan bisnis maupun personal branding.</p>
+                            </Reveal>
+
+                            <Reveal delay={350} className="bg-slate-900/40 border border-slate-900 hover:border-slate-800 rounded-3xl p-6">
+                                <div className="w-12 h-12 rounded-2xl bg-teal-400/10 text-teal-400 flex items-center justify-center border border-teal-500/20 mb-5">
+                                    <i className="fa-solid fa-server text-xl"></i>
+                                </div>
+                                <h3 className="text-xl font-bold text-white mb-3">Backend & Logic</h3>
+                                <p className="text-slate-400 leading-relaxed">Mengembangkan logika aplikasi serta API yang stabil, efisien, dan siap diintegrasikan ke berbagai platform.</p>
+                            </Reveal>
+
+                            <Reveal delay={500} className="bg-slate-900/40 border border-slate-900 hover:border-slate-800 rounded-3xl p-6">
+                                <div className="w-12 h-12 rounded-2xl bg-cyan-400/10 text-cyan-400 flex items-center justify-center border border-cyan-500/20 mb-5">
+                                    <i className="fa-solid fa-chart-line text-xl"></i>
+                                </div>
+                                <h3 className="text-xl font-bold text-white mb-3">Data & Product</h3>
+                                <p className="text-slate-400 leading-relaxed">Menyatukan kebutuhan produk dengan data, analitik, dan pengalaman pengguna agar solusi lebih bernilai.</p>
+                            </Reveal>
+                        </div>
+                    </section>
 
                     {/* Footer Section */}
                     <footer className="border-t border-slate-900/80 bg-slate-950 py-12 px-6 w-full mt-auto relative z-10">
                         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                             <div className="text-center md:text-left">
                                 <a href="#" className="text-xl font-bold tracking-tight text-white hover:text-emerald-400 transition duration-300">
-                                    {brandFirstName}<span className="text-emerald-400">.</span>
+                                    {brandName}<span className="text-emerald-400">.</span>
                                 </a>
                                 <p className="text-xs text-slate-500 mt-1.5">© 2026 {PORTFOLIO_DATA.profile.name}. All rights reserved.</p>
                             </div>
