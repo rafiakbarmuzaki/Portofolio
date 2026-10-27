@@ -1,99 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- SEO Meta Tags -->
-<title>Rafi Akbar Muzaki: Portofolio Profesional</title>
-<meta name="description" content="Portofolio resmi Rafi Akbar Muzaki. Menampilkan proyek IT & Software Development serta karya musik.">
-<meta name="author" content="Rafi Akbar Muzaki">
+    <!-- SEO Meta Tags -->
+    <title>Rafi Akbar Muzaki: Portofolio Profesional</title>
+    <meta name="description" content="Portofolio resmi Rafi Akbar Muzaki. Menampilkan proyek IT &amp; Software Development serta karya musik." />
+    <meta name="author" content="Rafi Akbar Muzaki" />
+    <meta name="theme-color" content="#030712" />
+    <link rel="canonical" href="https://rafiakbarmuzaki.my.id/" />
 
-<!-- Favicon (Ikon Kecil di Samping URL Google & Tab Browser) -->
-<link rel="icon" href="https://rafiakbarmuzaki.my.id/assets/pp.png" type="image/png">
-<link rel="apple-touch-icon" href="https://rafiakbarmuzaki.my.id/assets/pp.png">
+    <!-- Favicon (ikon kecil di tab browser & hasil pencarian Google) -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="96x96" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-<!-- Open Graph / Facebook / WhatsApp / Google Search Thumbnail -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://rafiakbarmuzaki.my.id/">
-<meta property="og:title" content="Rafi Akbar Muzaki: Portofolio Profesional">
-<meta property="og:description" content="Portofolio resmi Rafi Akbar Muzaki. Menampilkan proyek IT & Software Development serta karya musik.">
-<meta property="og:image" content="https://rafiakbarmuzaki.my.id/gambar-preview.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn: tampilan saat link dibagikan -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rafi Akbar Muzaki" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:url" content="https://rafiakbarmuzaki.my.id/" />
+    <meta property="og:title" content="Rafi Akbar Muzaki: Portofolio Profesional" />
+    <meta property="og:description" content="Portofolio resmi Rafi Akbar Muzaki. Menampilkan proyek IT &amp; Software Development serta karya musik." />
+    <meta property="og:image" content="https://rafiakbarmuzaki.my.id/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rafi Akbar Muzaki — Fullstack Developer dan Gitaris" />
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://rafiakbarmuzaki.my.id/">
-<meta name="twitter:title" content="Rafi Akbar Muzaki: Portofolio Profesional">
-<meta name="twitter:description" content="Portofolio resmi Rafi Akbar Muzaki. Menampilkan proyek IT & Software Development serta karya musik.">
-<meta name="twitter:image" content="https://rafiakbarmuzaki.my.id/gambar-preview.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://rafiakbarmuzaki.my.id/" />
+    <meta name="twitter:title" content="Rafi Akbar Muzaki: Portofolio Profesional" />
+    <meta name="twitter:description" content="Portofolio resmi Rafi Akbar Muzaki. Menampilkan proyek IT &amp; Software Development serta karya musik." />
+    <meta name="twitter:image" content="https://rafiakbarmuzaki.my.id/og-image.jpg" />
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: { slate: { 950: '#030712' } },
-      fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }
-    }
-  }
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-<style>
-body { font-family: 'Plus Jakarta Sans', sans-serif; }
-.code-font { font-family: 'JetBrains Mono', monospace; }
-@keyframes float-slow { 0%, 100% { transform: translateY(0px) scale(1); } 50% { transform: translateY(-25px) scale(1.1); } }
-@keyframes float-reverse { 0%, 100% { transform: translateY(0px) scale(1.05); } 50% { transform: translateY(25px) scale(0.95); } }
-.animate-float-slow { animation: float-slow 12s ease-in-out infinite; }
-.animate-float-reverse { animation: float-reverse 15s ease-in-out infinite; }
-</style>
-</head>
-<body class="bg-slate-950 text-slate-100 antialiased overflow-x-hidden min-h-screen flex items-center justify-center relative">
+    <!-- Data terstruktur: membantu Google memahami siapa pemilik situs ini -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rafi Akbar Muzaki",
+        "url": "https://rafiakbarmuzaki.my.id/",
+        "image": "https://rafiakbarmuzaki.my.id/assets/pp.png",
+        "jobTitle": "Fullstack Developer & Gitaris",
+        "address": { "@type": "PostalAddress", "addressLocality": "Jakarta", "addressCountry": "ID" },
+        "sameAs": [
+          "https://github.com/rafiakbarmuzaki",
+          "https://www.linkedin.com/in/rafiakbarmuzaki/",
+          "https://instagram.com/rafiakbarmuzaki"
+        ]
+      }
+    </script>
 
-  <div class="absolute top-10 left-10 w-80 h-80 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none animate-float-slow"></div>
-  <div class="absolute top-1/3 right-10 w-[450px] h-[450px] bg-cyan-500/5 rounded-full blur-[150px] pointer-events-none animate-float-reverse"></div>
-  <div class="absolute bottom-20 left-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none animate-float-slow"></div>
-
-  <div class="relative z-10 max-w-3xl w-full px-6 py-20 text-center">
-    <span class="code-font text-emerald-400 font-semibold tracking-wider text-xs md:text-sm inline-flex items-center gap-2 bg-emerald-500/10 px-3.5 py-1.5 rounded-full border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.1)] mb-8">
-      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-      RAFI AKBAR MUZAKI
-    </span>
-    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.15] mb-14">
-      Mau lihat portofolio<br class="hidden md:block"> yang mana?
-    </h1>
-
-    <div class="grid md:grid-cols-2 gap-6 text-left">
-      <a href="it.html" class="group relative bg-slate-900/40 border border-slate-900/80 hover:border-emerald-500/40 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(0,0,0,0.5)] flex flex-col gap-4">
-        <div class="w-14 h-14 rounded-2xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center text-2xl border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.15)] transition duration-300 group-hover:scale-110">
-          <i class="fa-solid fa-code"></i>
+    <!-- Cegah kilatan putih sebelum CSS termuat -->
+    <style>
+      html { background: #030712; color-scheme: dark; }
+      @keyframes splash { 50% { opacity: 0.35; } }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Tampilan awal sebelum React siap; otomatis digantikan saat aplikasi dimuat -->
+      <div style="min-height: 100vh; display: grid; place-items: center">
+        <div
+          style="
+            width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center;
+            background: linear-gradient(135deg, #34d399, #2dd4bf); color: #030712;
+            font: 900 22px system-ui, sans-serif; animation: splash 1.4s ease-in-out infinite;
+          "
+        >
+          R
         </div>
-        <h2 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition duration-300">Portofolio IT</h2>
-        <p class="text-slate-400 text-sm leading-relaxed">Proyek software & mobile development — Flutter, Node.js, dan sistem untuk bisnis kecil.</p>
-        <span class="text-sm font-bold text-emerald-400 flex items-center gap-1.5 mt-2">
-          Lihat proyek IT <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
-        </span>
-      </a>
-
-      <a href="musik.html" class="group relative bg-slate-900/40 border border-slate-900/80 hover:border-emerald-500/40 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(0,0,0,0.5)] flex flex-col gap-4">
-        <div class="w-14 h-14 rounded-2xl bg-teal-400/10 text-teal-400 flex items-center justify-center text-2xl border border-teal-500/20 shadow-[0_0_15px_rgba(20,184,166,0.15)] transition duration-300 group-hover:scale-110">
-          <i class="fa-solid fa-guitar"></i>
-        </div>
-        <h2 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition duration-300">Portofolio Musik</h2>
-        <p class="text-slate-400 text-sm leading-relaxed">Sisi lain saya sebagai gitaris — gear, preset tone, skill, dan pengalaman panggung.</p>
-        <span class="text-sm font-bold text-emerald-400 flex items-center gap-1.5 mt-2">
-          Lihat portofolio musik <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"></i>
-        </span>
-      </a>
+      </div>
     </div>
 
-    <p class="text-xs text-slate-600 mt-16 code-font">© 2026 Rafi Akbar Muzaki.</p>
-  </div>
+    <noscript>
+      <div style="max-width: 36rem; margin: 4rem auto; padding: 0 1.5rem; color: #e2e8f0; font-family: system-ui, sans-serif">
+        <h1>Rafi Akbar Muzaki</h1>
+        <p>Fullstack Developer &amp; Gitaris, Jakarta. Situs ini membutuhkan JavaScript untuk ditampilkan.</p>
+        <ul>
+          <li><a style="color: #34d399" href="/it/">Portofolio IT</a></li>
+          <li><a style="color: #34d399" href="/musik/">Portofolio Musik</a></li>
+          <li><a style="color: #34d399" href="mailto:rafimuzaki1705@gmail.com">rafimuzaki1705@gmail.com</a></li>
+        </ul>
+      </div>
+    </noscript>
 
-</body>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
